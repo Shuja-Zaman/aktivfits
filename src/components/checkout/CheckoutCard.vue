@@ -276,7 +276,7 @@ const templateParams = {
 
       // Send an email
       await emailjs.send(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, templateParams, import.meta.env.VITE_PUBLIC_KEY);
-      // await emailjs.send(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, templateParams2, import.meta.env.VITE_PUBLIC_KEY);
+      await emailjs.send(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, templateParams2, import.meta.env.VITE_PUBLIC_KEY);
 
       // Clear the form fields and cart
       email.value = '';
